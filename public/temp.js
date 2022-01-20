@@ -149,8 +149,7 @@ var Upstox = (function () {
         this.apiKey +
         "&redirect_uri=" +
         this.redirectUri +
-        "&response_type=code&user_id=" +
-        userId
+        "&response_type=code"
     )
     this.upstoxContainer.style.display = "block"
     this.loginIFrameEl.onload = function () {
