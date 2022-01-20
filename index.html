@@ -1,0 +1,26 @@
+<html>
+  <head>
+    <title>Modern Algos</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="main">
+      <button id="login" class="green-button">Login</button>
+    </div>
+
+    <script type="text/javascript" src="./temp.js"></script>
+    <script type="text/javascript">
+      let upstox = new Upstox(
+        "nlCINdn86c50YYGKi9CBVRPB5RIZOXv8pAxl3ssb",
+        "https://google.com"
+      )
+
+      document.getElementById("login").addEventListener("click", async () => {
+        let loginPromise = await upstox.login()
+        console.log(loginPromise, "loginPromise")
+      })
+    </script>
+  </body>
+</html>

@@ -1,0 +1,25 @@
+body {
+  width: 100%;
+  min-height: 100%;
+}
+
+.main {
+  width: 100%;
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #fafafa;
+}
+
+.green-button {
+  background: #00b200;
+  border: 1px solid #00b200;
+  color: #fff;
+  font-size: 14px;
+  font-weight: bold;
+  padding: 10px 20px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
